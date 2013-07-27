@@ -1,13 +1,13 @@
 # Wechat for Woojuu -- 记账的微信应用
 =========
-- Record your daily expense, record your daily life
+## Record your daily expense, record your daily life
 
   ![](misc/qrcode-banner.png)
 
 ## Why we do this?
 - Help users to form the habit of recording daily expense
 - Enable expense data to provide meaningful feedback
-- Get hands wet for ATI chat and data analysis
+- Get hands wet for AI chat and data analysis
 
 ### screenshots
   ![](misc/comparision.jpg)  ![](misc/prediction.jpg) ![](misc/voiceinput.jpg)
