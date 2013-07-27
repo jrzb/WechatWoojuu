@@ -1,0 +1,4 @@
+[{% for obj in objs %}
+{"createtime":"{{ obj[0] }}","content":"{{ obj[1] }}"},
+{% endfor %}]
+

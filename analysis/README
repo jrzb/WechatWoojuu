@@ -1,0 +1,3 @@
+git push && git checkout master && git merge webserver && git pull && git push && git checkout webserver
+
+# db_schema.sql创建mysql的数据结构

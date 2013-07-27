@@ -1,0 +1,53 @@
+select username, sum(index_value) from userprofile where index_key like '%visit_count' group by username having sum(index_value)> 3 order by sum(index_value) desc;
+
+select from_username, createtime, left(content, 10) from usertext where from_username !='gh_2fba4c2ef423' order by id desc limit 10;
+
+mysql -hserver -uuser_2013 -pilovechina index_db -e "insert into userprofile (username, service_name, index_key, index_value) values ('obF30jmhwqzARcqd2w0IG8DNf7Bs', 'gh_2fba4c2ef423', 'username', 'hsinglin');"
+
+select username, sum(index_value) from userprofile where index_key like '%visit_count' group by username having sum(index_value)> 3 order by sum(index_value) desc;
+
+git push && git checkout master && git merge webserver && git pull && git push && git checkout webserver
+
+http://173.255.227.47:8091/get_index_daily_service_line?service_name=gh_2fba4c2ef423&index_key_list=20130525_record_count;20130526_record_count;20130527_record_count;20130528_record_count;20130529_record_count
+
+http://173.255.227.47:8091/get_index_daily_service_line?service_name=gh_2fba4c2ef423&index_key_list=20130525_subscribe_count;20130526_subscribe_count;20130527_subscribe_count;20130528_subscribe_count;20130529_subscribe_count
+
+http://173.255.227.47:8091/get_index_daily_service_line?service_name=gh_2fba4c2ef423&index_key_list=20130525_unsubscribe_count;20130526_unsubscribe_count;20130527_unsubscribe_count;20130528_unsubscribe_count;20130529_unsubscribe_count
+
+denny
+http://173.255.227.47:8091/get_index_daily_user_line?username=obF30jr0VD4HUjUq1kYusd5gSCBo&service_name=gh_2fba4c2ef423&index_key_list=20130525_visit_count;20130526_visit_count;20130527_visit_count;20130528_visit_count;20130529_visit_count
+
+sophia
+http://173.255.227.47:8091/get_index_daily_user_line?username=obF30jvBV656EFFzbzFoqMGxPivM&service_name=gh_2fba4c2ef423&index_key_list=20130525_visit_count;20130526_visit_count;20130527_visit_count;20130528_visit_count;20130529_visit_count
+
+liki
+http://173.255.227.47:8091/get_index_daily_user_line?username=obF30jiGrBob1V_28lNS-6QpcEww&service_name=gh_2fba4c2ef423&index_key_list=20130525_visit_count;20130526_visit_count;20130527_visit_count;20130528_visit_count;20130529_visit_count
+
+http://173.255.227.47:8091/get_index_daily_users_lines?username_list=
+&service_name=gh_2fba4c2ef423&index_key_list=20130524_visit_count;20130525_visit_count;20130526_visit_count
+
+http://173.255.227.47:8091/get_index_daily_users_lines?username_list=obF30jr0VD4HUjUq1kYusd5gSCBo;obF30jvBV656EFFzbzFoqMGxPivM;obF30jgogoZFWEwoS9okZsfSg7QA;obF30jnstwIdr21WzoDEEjqMzh40&service_name=gh_2fba4c2ef423&index_key_list=20130601_visit_count;20130602_visit_count;20130602_visit_count;20130603_visit_count;20130604_visit_count;20130605_visit_count;20130606_visit_count;20130607_visit_count
+
+http://173.255.227.47:8091/get_index_daily_users_lines?username_list=obF30jhXJFKf9ak6_KlhF84WhmKc;obF30jmePXHdqnz7OLVhNRyP-KL0;obF30jjXIScKKxx2AeQAqCrvkgYU;obF30jhti6Hgt4tA79U-Nr2sg3Bs&service_name=gh_2fba4c2ef423&index_key_list=20130601_visit_count;20130602_visit_count;20130602_visit_count;20130603_visit_count;20130604_visit_count;20130605_visit_count;20130606_visit_count;20130607_visit_count
+
+http://173.255.227.47:8091/get_index_daily_users_lines?username_list=oOLGTjiMZ2nhEHcMhSP9Tq_kgLUk;obF30js6tJnyxSgHc5ahdTa2G__U;obF30jtLF4h_iCD78L4WNoh9nmx4;obF30jhQBmskH4ki8Aojiv3hgwdw&service_name=gh_2fba4c2ef423&index_key_list=20130601_visit_count;20130602_visit_count;20130602_visit_count;20130603_visit_count;20130604_visit_count;20130605_visit_count;20130606_visit_count;20130607_visit_count
+
+http://173.255.227.47:8091/get_index_daily_users_lines?username_list=;obF30jpxdm9FBMYffcs2BkhrBqZ4;obF30jrvwuz1ub72PCI8VKJvavPY;obF30jkTFj6rp6Nn2cYdW_Be_TU0&service_name=gh_2fba4c2ef423&index_key_list=20130601_visit_count;20130602_visit_count;20130602_visit_count;20130603_visit_count;20130604_visit_count;20130605_visit_count;20130606_visit_count;20130607_visit_count
+
+http://173.255.227.47:8091/get_index_daily_users_lines?username_list=obF30jlwVRzIneGixozApN2VbRqU;obF30ji6VdIid17IXdqXZI8BBicc;obF30jupjpQujZETP92V5J9YfOxA;obF30jkVYRx3jbxalXhQghaNHYLQ&service_name=gh_2fba4c2ef423&index_key_list=20130601_visit_count;20130602_visit_count;20130602_visit_count;20130603_visit_count;20130604_visit_count;20130605_visit_count;20130606_visit_count;20130607_visit_count
+
+http://173.255.227.47:8091/get_index_daily_users_lines?username_list=obF30jmUQhr5hoWy8-lofJEsNfYI;obF30jlof5Dz837q_JyGQ04RRRTs;obF30jmndMIUaDy8a9tnRmvrMhdU;obF30juz3XH1hihwx6ygulnAebj8&service_name=gh_2fba4c2ef423&index_key_list=20130601_visit_count;20130602_visit_count;20130602_visit_count;20130603_visit_count;20130604_visit_count;20130605_visit_count;20130606_visit_count;20130607_visit_count
+
+http://173.255.227.47:8091/get_index_daily_users_lines?username_list=obF30jvgGlr5VmlyDyx55G9ZGhvE;obF30jiYGOeeXAPqsdmV6pdAepZU;obF30jqWsxCAAFeggteNmCjpE2H4;obF30jhxCs-A-0wypY-ufu_3ou9w;obF30jihgit6bDHwVfIKuWR333uw;obF30jiGrBob1V_28lNS-6QpcEww&service_name=gh_2fba4c2ef423&index_key_list=20130601_visit_count;20130602_visit_count;20130602_visit_count;20130603_visit_count;20130604_visit_count;20130605_visit_count;20130606_visit_count;20130607_visit_count
+
+http://173.255.227.47:8091/get_index_daily_users_lines?username_list=obF30jjsf1UKB9ZwpSuaWimtm44U;obF30jlRW66Rmcl4yoQjMSfH-yco;obF30jllsz3PhEuzncyDRL6q7iRY;obF30jiRkutwjqdXhCkl6quIZw8s;obF30jsdWLKQxAADRx3vo3o-MBYI&service_name=gh_2fba4c2ef423&index_key_list=20130601_visit_count;20130602_visit_count;20130602_visit_count;20130603_visit_count;20130604_visit_count;20130605_visit_count;20130606_visit_count;20130607_visit_count
+ --8<-------------------------- separator ------------------------>8--
+
+http://127.0.0.1:8091/get_index_daily_service_line?service_name=gh_05d5313dea46&index_key_list=20130524_record_count;20130525_record_count;20130526_record_count
+
+http://127.0.0.1:8091/get_index_daily_user_line?username=oOLGTjiMZ2nhEHcMhSP9Tq_kgLUk&service_name=gh_05d5313dea46&index_key_list=20130601_visit_count;20130602_visit_count;20130602_visit_count;20130603_visit_count;20130604_visit_count;20130605_visit_count;20130606_visit_count;20130607_visit_count
+
+http://127.0.0.1:8091/get_index_daily_users_lines?username_list=oOLGTjiMZ2nhEHcMhSP9Tq_kgLUk;oOLGTjiMZ2nhEHcMhSP9Tq_abcefef&service_name=gh_05d5313dea46&index_key_list=20130601_visit_count;20130602_visit_count;20130602_visit_count;20130603_visit_count;20130604_visit_count;20130605_visit_count;20130606_visit_count;20130607_visit_count
+
+
+http://173.255.227.47:8091/get_index_daily_users_lines?username_list=obF30jvBV656EFFzbzFoqMGxPivM;obF30jjXIScKKxx2AeQAqCrvkgYU;obF30jnstwIdr21WzoDEEjqMzh40;obF30jhti6Hgt4tA79U-Nr2sg3Bs;obF30jgogoZFWEwoS9okZsfSg7QA&service_name=gh_2fba4c2ef423&index_name=visit_count

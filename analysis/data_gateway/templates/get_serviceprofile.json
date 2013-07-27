@@ -1,0 +1,4 @@
+[{% for obj in objs %}
+{"key":"{{ obj[0] }}","value":"{{ obj[1] }}"},
+{% endfor %}]
+

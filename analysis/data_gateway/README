@@ -1,0 +1,12 @@
+gateway:
+1. store input data
+2. get stored data
+3. get index
+
+curl "http://127.0.0.1:8090/get_index_userprofile?username=oOLGTjiMZ2nhEHcMhSP9Tq_kgLUk&service_name=gh_05d5313dea46&index_key_list=20130524_visit_count;20130525_visit_count;20130526_visit_count"
+
+curl "http://127.0.0.1:8090/get_usertext?username=oOLGTjiMZ2nhEHcMhSP9Tq_kgLUk&service_name=gh_05d5313dea46"
+
+curl "http://127.0.0.1:8090/get_index_userprofile?username=oOLGTjiMZ2nhEHcMhSP9Tq_kgLUk&service_name=gh_05d5313dea46"
+
+python -c "import eventtrigger; eventtrigger.get_message('wechat_event', 'localhost')"

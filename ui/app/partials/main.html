@@ -1,0 +1,19 @@
+<div class="hero-unit slogan-unit" ng-switch="applyStatus">
+	<figure id="wechat-slogan">再小的个体，也能有自己的专业品牌</figure>
+	<p class="lead">快速创建功能丰富的微信公众号，利用数据分析工具持续优化运营。<br/>建立信任，传递价值，培养品牌忠诚度。</p>
+	<div class="row" ng-switch-when="pre-register">
+		<a class="btn btn-large btn-success btn-embossed" href="#" ng-click="applyBetaAccount()">申请内测帐号</a>
+	</div>
+	<div class="row" ng-switch-when="email" ng-controller="RegisterCtrl">
+		<form name="regForm" class="form-inline" action="" novalidate>
+			<div class="control-group large" ng-class="{error: !validEmail, success: validEmail || !regForm.email.$error.email}">
+				<input type="email" name="email" ng-model="email" class="span3" placeholder="请输入邮件地址" required/>
+				<button type="submit" id="registerBtn" class="btn btn-large btn-success btn-embossed" ng-click="register()">注册</button>
+			</div>
+			<div id="error-tooltip" class="tooltip fade bottom in tooltip-light" ng-show="!validEmail">
+				<div class="tooltip-arrow"></div>
+				<div class="tooltip-inner">请输入有效邮箱地址。</div>
+			</div>
+		</form>
+	</div>
+</div>

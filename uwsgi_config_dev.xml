@@ -1,0 +1,11 @@
+<uwsgi>
+	<chdir>/Users/liki/works/wechat.io</chdir>
+	<pythonpath>/Users/liki/.virtualenvs/wechat.io</pythonpath>
+	<virtualenv>/Users/liki/.virtualenvs/wechat.io</virtualenv>
+	<module>server.app</module>
+	<callable>app</callable>
+	<socket>/tmp/uwsgi_wechat_io.sock</socket>
+	<chmod-socket>666</chmod-socket>
+	<master />
+	<processes>1</processes>
+</uwsgi>

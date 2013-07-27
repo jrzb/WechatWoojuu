@@ -1,0 +1,4 @@
+[{% for obj in objs %}
+{"createtime":"{{ obj[0] }}", "username":"{{ obj[1] }}",  "content":"{{ replace_str(obj[2]) }}"},
+{% endfor %}]
+
