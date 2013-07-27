@@ -1,6 +1,6 @@
 # Wechat for Woojuu -- 记账的微信应用
 =========
-- Record your expense, record your life
+- Record your daily expense, record your daily life
 
   ![](misc/qrcode-banner.png)
 
