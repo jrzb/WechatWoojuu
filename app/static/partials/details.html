@@ -1,0 +1,18 @@
+<header>
+	<span class="nipple-details"><i class="sprite">Details</i></span>
+</header>
+<ul id="details-list">
+	<li ng-repeat="daily in expenses">
+		<em>{{ daily.date | dateformat:"M月d日" }}</em>
+		<ul>
+			<li ng-repeat="expense in daily.expenses">
+				<span class="expense-name">{{ expense.notes | isnotes }}</span>
+				<span class="expense-amount">{{ expense.amount | currency:"\u00A5":1 }}</span>
+				<a href="#" ng-click="removeExpense(expense.id, $parent.$index, $index)">删</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+<div id="load-last-week">
+	<a href="#" ng-click="loadPrevWeek()">查看上一周记录</a>
+</div>

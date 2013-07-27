@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wwApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="keywords" content="Keywords here" />
+	<meta name="description" content="Description here" />
+	<title>历史记录</title>
+	<!-- In production
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="static/css/bootstrap-responsive.css" rel="stylesheet">
+	-->
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css"/>
+	<link rel="stylesheet" href="{[ static('css/app.min.css') ]}" />
+<!--
+	<link rel="stylesheet" href="{[ static('css/normalize.css') ]}"/>
+	<link rel="stylesheet" href="{[ static('css/app.css') ]}" />
+	-->
+
+</head>
+<body ng-controller="MainCtrl">
+	<div id="receipt" name="receipt">
+		<hr class="brim-up" />
+		<nav>
+			<ul>
+				<li><a ng-href="/u/{{ userId }}" id="icon-dashboard" class="sprite">Dashboard</a></li>
+				<li><a ng-href="/u/{{ userId }}/details" id="icon-details" class="sprite">Details</a></li>
+			</ul>
+		</nav>
+		<ng-view class="view"></ng-view>
+		<hr class="brim-down" />
+	</div>
+	<footer>
+		<a href="#receipt" id="icon-backtotop">Back to Top</a>
+	</footer>
+
+	<script type="text/javascript" src="//libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="//libs.baidu.com/highcharts/2.3.5/highcharts.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+	<script type="text/javascript" src="{[ static('js/lib/angular-resource.min.js') ]}"></script>
+	<script type="text/javascript" src="{[ static('js/lib/date-zh-CN.min.js') ]}"></script>
+	<script type="text/javascript" src="{[ static('js/lib/accounting.min.js') ]}"></script>
+	<script type="text/javascript" src="{[ static('js/app.min.js') ]}"></script>
+	<!--
+	<script type="text/javascript" src="{[ static('js/lib/jquery/jquery.js') ]}"></script>
+	<script type="text/javascript" src="{[ static('js/lib/datejs/date-zh-CN.js') ]}"></script>
+	<script type="text/javascript" src="{[ static('js/lib/accounting/accounting.js') ]}"></script>
+	<script type="text/javascript" src="{[ static('js/lib/highcharts/highcharts.src.js') ]}"></script>
+	<script type="text/javascript" src="{[ static('js/lib/angular/angular.js') ]}"></script>
+	<script type="text/javascript" src="{[ static('js/lib/angular-resource/angular-resource.js') ]}"></script>
+	<script type="text/javascript" src="{[ static('js/app.js') ]}"></script>
+	-->
+
+</body>
+</html>

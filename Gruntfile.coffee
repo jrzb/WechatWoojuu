@@ -1,12 +1,3 @@
-#---------------------------
-# File : Gruntfile.coffee
-# Author : liki
-# Description : Config file for Gruntjs
-# Created : 5/17/13
-#---------------------------
-
-'use strict'
-
 module.exports = (grunt) ->
 	# Project configuration
 	grunt.initConfig(
@@ -16,12 +7,13 @@ module.exports = (grunt) ->
 				banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
 			app:
 				files:
-					'ui/app/js/app.min.js': ['ui/app/js/app.js']
+					'app/static/js/lib/date-zh-CN.min.js': ['app/static/js/lib/datejs/date-zh-CN.js']
+					'app/static/js/lib/accounting.min.js': ['app/static/js/lib/accounting/accounting.js']
+					'app/static/js/app.min.js': ['app/static/js/app.js']
 		cssmin:
 			compress:
 				files:
-					'ui/app/css/app.min.css': ['ui/app/css/app.css'],
-					'ui/app/lib/flat-ui/css/flat-ui.min.css': ['ui/app/lib/flat-ui/css/flat-ui.css']
+					'app/static/css/app.min.css': ['app/static/css/app.css']
 	)
 
 	# Load the plugins that provide tasks

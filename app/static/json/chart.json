@@ -1,0 +1,47 @@
+[
+	{
+		"chart": {
+			"backgroundColor": null
+		},
+		"credits": {
+			"enabled": false
+		},
+		"title": {
+			"text": "Israel love Iran"
+		},
+		"subtitle": {
+			"text": "Source: Israel loves iran on fb"
+		},
+		"xAxis": {
+			"labels": {}
+		},
+		"tooltip": {},
+		"plotOptions": {
+			"area": {
+				"pointStart": 1940,
+				"marker": {
+					"enabled": false,
+					"symbol": "circle",
+					"radius": 2,
+					"states": {
+						"hover": {
+							"enabled": true
+						}
+					}
+				}
+			}
+		},
+		"series": [
+			{
+				"name": "Israel",
+				"data": [
+					400,
+					194,
+					301,
+					130,
+					300
+				]
+			}
+		]
+	}
+]

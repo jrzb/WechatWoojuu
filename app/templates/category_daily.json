@@ -1,0 +1,2 @@
+[{% for obj in objs %}
+{"category":"{[obj[0]]}", "date":"{[obj[1]]}", "totalamount":"{[format_float_str(obj[2])]}"},{% endfor %}]

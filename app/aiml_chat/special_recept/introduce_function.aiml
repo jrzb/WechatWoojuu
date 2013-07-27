@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<meta name="author" content="DennyZhang"/>
+<meta name="language" content="zh"/>
+
+<category>
+<pattern>收入</pattern>
+<template>
+<srai>INTRODUCEINCOME</srai>
+</template>
+</category>
+
+<category>
+<pattern>INTRODUCEINCOME</pattern>
+<template>
+<random>
+<li>如果是记收入的话，只要按地球人语言输入就好了：2000 工资血汗钱呀。/::d</li>
+<li>收入是可以直接记的。更多功能输入1.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>记错*</pattern>
+<template>
+<srai>INTRODELETION</srai>
+</template>
+</category>
+
+<category>
+<pattern>*记错</pattern>
+<template>
+<srai>INTRODELETION</srai>
+</template>
+</category>
+
+<category>
+<pattern>*删除</pattern>
+<template>
+<srai>INTRODELETION</srai>
+</template>
+</category>
+
+<category>
+<pattern>删除*</pattern>
+<template>
+<srai>INTRODELETION</srai>
+</template>
+</category>
+
+<category>
+<pattern>INTRODELETION</pattern>
+<template>
+<random>
+<li>不要担心，记错不要紧，可以删除后再添加的。/::d</li>
+<li>记录是可以删除的，功能藏得很深的，你找得不/::d</li>
+</random>
+</template>
+</category>
+
+</aiml>

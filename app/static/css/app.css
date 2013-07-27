@@ -1,0 +1,284 @@
+/* app css stylesheet */
+/* ---------------------------------- */
+/* @Variables */
+/* ---------------------------------- */
+/* @Mixins */
+/* ---------------------------------- */
+/* @Sprites */
+/* ---------------------------------- */
+/* @Global */
+html {
+  background: url("../img/bg-pixel-texture.png") repeat;
+  background-color: #f9f9f3;
+}
+body {
+  font-family: 'Helvetica Neue', 'Hiragino Sans GB', Helvetica, STHeiti, Microsoft YaHei, SimHei, Arial, sans-serif;
+  font-size: 62.5%;
+}
+a {
+  text-decoration: underline;
+  color: #1d4e00;
+}
+hr {
+  clear: both;
+  border: none;
+  float: none;
+  overflow: hidden;
+}
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+i {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+/* ---------------------------------- */
+/* @Responsive */
+@media only screen and (min-width: 320px) {
+  .sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+  }
+  #receipt {
+    margin: 3%;
+    background: url("../img/wave-pattern.png") #eef1ea left top repeat;
+    border-left: solid 1px #cecec9;
+    border-right: solid 1px #cecec9;
+  }
+  #receipt nav {
+    margin-top: 15px;
+  }
+  #receipt nav ul {
+    display: block;
+    overflow: hidden;
+  }
+  #receipt nav li {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+  #receipt nav a {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #receipt nav #icon-dashboard {
+    width: 23px;
+    height: 20px;
+    background-position: 0 0;
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+  }
+  #receipt nav #icon-details {
+    width: 23px;
+    height: 20px;
+    background-position: -47px 0;
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+  }
+  #receipt .view {
+    display: block;
+    margin: 0 20px;
+    margin-top: 15px;
+  }
+  #receipt .view header {
+    height: 3px;
+    border-bottom: solid 1px #1d4e00;
+  }
+  #receipt .view header span {
+    display: block;
+    width: 50%;
+  }
+  #receipt .view header span i {
+    width: 7px;
+    height: 4px;
+    background-position: -95px 0;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: -2px;
+  }
+  #receipt .view header span.nipple-dashboard {
+    float: left;
+    margin-left: -10px;
+  }
+  #receipt .view header span.nipple-details {
+    float: right;
+    margin-right: -10px;
+  }
+  #receipt .view #summary {
+    border-bottom: dotted 1px #41692a;
+    overflow: hidden;
+  }
+  #receipt .view #summary figure {
+    float: left;
+    width: 50%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  #receipt .view #summary h2 {
+    font-size: 2.4em;
+    font-weight: 700;
+    color: #41692a;
+    margin: 0 0 3px 0;
+  }
+  #receipt .view #summary h2 sub {
+    font-size: 0.4em;
+  }
+  #receipt .view #summary figcaption {
+    font-size: 1.2em;
+  }
+  #receipt .view #charts {
+    margin-bottom: 20px;
+  }
+  #receipt .view #charts hgroup {
+    margin: 20px 10px;
+    color: #41692a;
+  }
+  #receipt .view #charts hgroup h2 {
+    font-weight: 300;
+  }
+  #receipt .view #charts #weekly-chart {
+    margin: 0 -20px;
+  }
+  #receipt .view ul#details-list {
+    font-size: 1.6em;
+  }
+  #receipt .view ul#details-list > li {
+    line-height: 44px;
+    border-bottom: solid 1px #1d4e00;
+  }
+  #receipt .view ul#details-list > li em {
+    display: block;
+    font-style: normal;
+    color: #41692a;
+    border-bottom: dotted 1px #41692a;
+    padding: 0 10px;
+  }
+  #receipt .view ul#details-list > li ul {
+    margin: 0 10px;
+    overflow: hidden;
+  }
+  #receipt .view ul#details-list > li ul span {
+    display: block;
+    float: left;
+  }
+  #receipt .view ul#details-list > li ul span.expense-name {
+    width: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 5px;
+  }
+  #receipt .view ul#details-list > li ul span.expense-amount {
+    width: 15%;
+    text-align: right;
+  }
+  #receipt .view ul#details-list > li ul a {
+    float: right;
+    display: block;
+    width: 10%;
+    color: #8a3d37;
+    text-decoration: underline;
+    text-align: right;
+  }
+  #receipt .view #load-last-week {
+    text-align: center;
+    font-size: 1.6em;
+  }
+  #receipt .view #load-last-week a {
+    display: block;
+    margin: 20px auto;
+    padding: 0;
+    padding: 6px;
+  }
+  #receipt .brim-up {
+    height: 3px;
+    background: url("../img/jarred-brim-up.png") transparent left top repeat-x;
+  }
+  #receipt .brim-down {
+    height: 3px;
+    background: url("../img/jarred-brim-down.png") transparent left top repeat-x;
+  }
+  footer {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  footer a#icon-backtotop {
+    background: url("../img/icon-backtotop.png") transparent left top no-repeat;
+    width: 20px;
+    height: 17px;
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 480px) {
+  
+}
+@media only screen and (min-width: 600px) {
+  
+}
+@media only screen and (min-width: 768px) {
+  
+}
+@media only screen and (min-width: 992px) {
+  
+}
+@media only screen and (min-width: 1382px) {
+  
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+  .sprite {
+    background-image: url("../img/sprite@2x.png");
+    background-repeat: no-repeat;
+  }
+  #receipt nav #icon-dashboard {
+    background-size: auto 19px;
+  }
+  #receipt nav #icon-details {
+    background-size: auto 20px;
+  }
+  #receipt .view header span {
+    display: block;
+    width: 50%;
+  }
+  #receipt .view header span i {
+    background-size: auto 20px;
+  }
+  #receipt .brim-up {
+    height: 3px;
+    background-image: url("../img/jarred-brim-up@2x.png");
+    background-size: auto 3px;
+  }
+  #receipt .brim-down {
+    height: 3px;
+    background-image: url("../img/jarred-brim-down@2x.png");
+    background-size: auto 3px;
+  }
+  footer a#icon-backtotop {
+    background: url("../img/icon-backtotop@2x.png");
+    background-size: auto 17px;
+  }
+}
+/* ---------------------------------- */

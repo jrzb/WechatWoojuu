@@ -1,5 +1,12 @@
 *.py[cod]
 
+*.log
+*.log.1
+*.log.2
+*.log.3
+*.log.4
+*.log.5
+
 # C extensions
 *.so
 
@@ -15,7 +22,6 @@ var
 sdist
 develop-eggs
 .installed.cfg
-lib64
 
 # Installer logs
 pip-log.txt
@@ -28,19 +34,25 @@ nosetests.xml
 # Translations
 *.mo
 
-# MAC OS
-.DS_Store
-
 # Mr Developer
 .mr.developer.cfg
 .project
 .pydevproject
+
+# JetBrain
 .idea
+
+# Mac
+.DS_Store
+.DS_Store*
+
+insert_*.sh
 
 # GruntJS
 node_modules
 .npm-debug.log
 tmp
-wechat_io.log
-access_msg.log
-access_msg.log*
+
+*report_*.png
+.Rhistory
+config.py

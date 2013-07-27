@@ -1,0 +1,367 @@
+/* app css stylesheet */
+
+/* ---------------------------------- */
+
+/* @Variables */
+@text-color: #000000;
+@text-title-color: #41692a;
+@link-color: #1d4e00;
+@link-red-color: #8a3d37;
+@deepgreen-color: #1d4e00;
+@lightgreen-color: #41692a;
+@bg-color: #f9f9f3;
+@receipt-bg-color: #eef1ea;
+@receipt-border-color: #cecec9;
+
+@receipt-content-offset: 20px;
+@details-inner-offset: 10px;
+
+/* ---------------------------------- */
+
+/* @Mixins */
+
+.center-block (@margin: 0) {
+	display: block;
+	margin: @margin auto;
+	padding: 0;
+}
+
+.use-sprite (@width: auto, @height: auto, @left: 0, @top: 0) {
+	width: @width;
+	height: @height;
+	background-position: @left @top;
+}
+
+// CSS image replacement
+// -------------------------
+// Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
+// Source: https://github.com/twitter/bootstrap/blob/master/less/mixins.less
+.hide-text () {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+
+.ellipsis (@w-space: normal) {
+	white-space: @w-space;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+// User select
+// For selecting text on the page
+.user-select (@select) {
+	-webkit-user-select: @select;
+	-moz-user-select: @select;
+	-ms-user-select: @select;
+	-o-user-select: @select;
+	user-select: @select;
+}
+
+
+
+/* ---------------------------------- */
+
+/* @Sprites */
+
+/* ---------------------------------- */
+
+/* @Global */
+
+html {
+	background: url("../img/bg-pixel-texture.png") repeat;
+	background-color: @bg-color;
+}
+
+body {
+	font-family: 'Helvetica Neue', 'Hiragino Sans GB', Helvetica, STHeiti, Microsoft YaHei, SimHei, Arial, sans-serif;
+	font-size: 62.5%;
+//	.user-select(none);
+}
+
+a {
+	text-decoration: underline;
+	color: @link-color;
+}
+
+hr {
+	clear: both;
+	border: none;
+	float: none;
+	overflow: hidden;
+}
+
+ul, li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+i {
+	display: block;
+	margin: 0;
+	padding: 0;
+	.hide-text();
+}
+
+
+/* ---------------------------------- */
+
+/* @Responsive */
+
+// small screen is deprecated
+@media only screen and (min-width: 320px) {
+	.sprite {
+		background-image: url("../img/sprite.png");
+		background-repeat: no-repeat;
+	}
+
+	#receipt {
+		margin: 3%;
+		background: url("../img/wave-pattern.png") @receipt-bg-color left top repeat;
+		border-left: solid 1px @receipt-border-color;
+		border-right: solid 1px @receipt-border-color;
+
+		nav {
+			margin-top: 15px;
+			ul {
+				display: block;
+				overflow: hidden;
+			}
+			li {
+				display: block;
+				float: left;
+				width: 50%;
+			}
+			a {
+				display: block;
+				.center-block();
+			}
+			#icon-dashboard {
+				.use-sprite(23px, 20px, 0, 0);
+				.hide-text();
+			}
+			#icon-details {
+				.use-sprite(23px, 20px, -47px, 0);
+				.hide-text();
+			}
+		}
+
+		.view {
+			display: block;
+			margin: 0 @receipt-content-offset;
+			margin-top: 15px;
+			header {
+				height: 3px;
+				border-bottom: solid 1px @deepgreen-color;
+
+				span {
+					display: block;
+					width: 50%;
+					i {
+						.use-sprite(7px, 4px, -95px, 0);
+						.center-block();
+						margin-bottom: -2px;
+					}
+				}
+				span.nipple-dashboard {
+					float: left;
+					margin-left: (0 - @receipt-content-offset / 2);
+				}
+				span.nipple-details {
+					float: right;
+					margin-right: (0 - @receipt-content-offset / 2);
+				}
+			}
+
+			// Partial specific
+			#summary {
+				border-bottom: dotted 1px @lightgreen-color;
+				overflow: hidden;
+				figure {
+					float: left;
+					width: 50%;
+					padding: 20px 0;
+					text-align: center;
+				}
+				h2 {
+					font-size: 2.4em;
+					font-weight: 700;
+					color: @text-title-color;
+					margin: 0 0 3px 0;
+					sub {
+						font-size: 0.4em;
+					}
+				}
+				figcaption {
+					font-size: 1.2em;
+				}
+			}
+
+			#charts {
+				margin-bottom: 20px;
+				hgroup {
+					margin: 20px 10px;
+					color: @lightgreen-color;
+					h2 {
+						font-weight: 300;
+					}
+				}
+				#weekly-chart {
+					margin: 0 -20px;
+				}
+			}
+
+			ul#details-list {
+				font-size: 1.6em;
+
+				> li {
+					line-height: 44px;
+					border-bottom: solid 1px @deepgreen-color;
+
+					em {
+						display: block;
+						font-style: normal;
+						color: @text-title-color;
+						border-bottom: dotted 1px @lightgreen-color;
+						padding: 0 @details-inner-offset;
+					}
+					ul {
+						margin: 0 @details-inner-offset;
+						overflow: hidden;
+						span {
+							display: block;
+							float: left;
+						}
+						span.expense-name {
+							width: 65%;
+							.ellipsis(nowrap);
+							margin-right: 5px;
+						}
+						span.expense-amount {
+							width: 15%;
+							text-align: right;
+						}
+						a {
+							float: right;
+							display: block;
+							width: 10%;
+//							padding: 0 5px;
+							color: @link-red-color;
+							text-decoration: underline;
+							text-align: right;
+						}
+					}
+				}
+			}
+
+			#load-last-week {
+				text-align: center;
+				font-size: 1.6em;
+				a {
+					.center-block(20px);
+					padding: 6px;
+				}
+			}
+		}
+
+		.brim-up {
+			height: 3px;
+			background: url("../img/jarred-brim-up.png") transparent left top repeat-x;
+		}
+		.brim-down {
+			height: 3px;
+			background: url("../img/jarred-brim-down.png") transparent left top repeat-x;
+		}
+	}
+
+	footer {
+		margin-bottom: 20px;
+		text-align: center;
+		a#icon-backtotop {
+			display: block;
+			background: url("../img/icon-backtotop.png") transparent left top no-repeat;
+			width: 20px;
+			height: 17px;
+			.hide-text();
+			.center-block();
+		}
+	}
+}
+
+// Normal screen
+@media only screen and (min-width: 480px) {
+
+}
+
+// Pads and larger phones
+@media only screen and (min-width: 600px) {
+
+}
+
+// Larger pads
+@media only screen and (min-width: 768px) {
+
+}
+
+// Horizontal pads and laptops
+@media only screen and (min-width: 992px) {
+
+}
+
+// Really large screens
+@media only screen and (min-width: 1382px) {
+
+}
+
+// 2X size (iPhone 4 etc)
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+	.sprite {
+		background-image: url("../img/sprite@2x.png");
+		background-repeat: no-repeat;
+	}
+
+	#receipt {
+		nav {
+			#icon-dashboard {
+				background-size: auto 19px;
+			}
+			#icon-details {
+				background-size: auto 20px;
+			}
+		}
+		.view {
+			header {
+				span {
+					display: block;
+					width: 50%;
+					i {
+						background-size: auto 20px;
+					}
+				}
+			}
+		}
+
+		.brim-up {
+			height: 3px;
+			background-image: url("../img/jarred-brim-up@2x.png");
+			background-size: auto 3px;
+		}
+		.brim-down {
+			height: 3px;
+			background-image: url("../img/jarred-brim-down@2x.png");
+			background-size: auto 3px;
+		}
+	}
+
+	footer {
+		a#icon-backtotop {
+			background: url("../img/icon-backtotop@2x.png");
+			background-size: auto 17px;
+		}
+	}
+}
+
+/* ---------------------------------- */

@@ -1,0 +1,2 @@
+[{% for obj in objs %}
+{"name":"{[obj[0]]}","amount":"{[format_float_str(obj[1])]}"},{% endfor %}]

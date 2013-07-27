@@ -1,10 +1,9 @@
 <uwsgi>
-	<chdir>/home/wwwroot/wechat.io</chdir>
-	<pythonpath>/home/virtualenvs/wechat.io</pythonpath>
-	<virtualenv>/home/virtualenvs/wechat.io</virtualenv>
-	<module>server.app</module>
+	<chdir>/home/wwwroot/wechat.woojuu.cc/app</chdir>
+	<pythonpath>/home/virtualenvs/wechat.woojuu.cc</pythonpath>
+	<module>app</module>
 	<callable>app</callable>
-	<socket>/tmp/uwsgi_wechat_io.sock</socket>
+	<socket>/tmp/uwsgi_woojuu_wechat.sock</socket>
 	<chmod-socket>666</chmod-socket>
 	<master />
 	<processes>1</processes>

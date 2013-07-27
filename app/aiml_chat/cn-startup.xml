@@ -1,0 +1,22 @@
+<aiml version="1.0">
+
+<category>
+<pattern>LOAD AIML CN</pattern>
+<template>
+
+<!-- Load chinese AIML set -->
+<!-- <learn>cn-profile.aiml</learn> -->
+<learn>./aiml_chat/say_hi.aiml</learn>
+<learn>./aiml_chat/emotion.aiml</learn>
+<learn>./aiml_chat/ask_question.aiml</learn>
+<learn>./aiml_chat/answer_question.aiml</learn>
+<learn>./aiml_chat/special_recept/user_profile.aiml</learn>
+<learn>./aiml_chat/special_recept/my_ask_question.aiml</learn>
+<learn>./aiml_chat/special_recept/introduce_function.aiml</learn>
+<!-- <learn>./aiml_chat/special_recept/unknown.aiml</learn> -->
+<!-- <learn>./aiml_chat/common_unknown.aiml</learn> -->
+
+</template>
+</category>
+
+</aiml>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<meta name="author" content="DennyZhang"/>
+<meta name="language" content="zh"/>
+
+<category>
+<pattern>一个*</pattern>
+<template>
+那个叫<set name="it"><person/></set>东西是什么玩意?
+</template>
+</category>
+
+<category>
+  <pattern>*</pattern>
+  <template>
+    <condition>
+      <li><srai>INACTIVITYQUESTIONS</srai></li>
+    </condition>
+  </template>
+</category>
+
+<category>
+<pattern>INACTIVITYQUESTIONS</pattern>
+<template>
+<condition>
+<li name="name" value="">我怎么称呼你?</li>
+<li><srai>ASK USER A QUESTION</srai></li>
+</condition>
+</template>
+</category>
+
+</aiml>

@@ -1,0 +1,2 @@
+[{% for key in key_list %}
+{"date":"{[key]}", "totalamount":"{[format_float_str(date_dict[key])]}"},{% endfor %}]

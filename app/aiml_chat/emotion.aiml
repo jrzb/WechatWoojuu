@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<meta name="author" content="DennyZhang"/>
+<meta name="language" content="zh"/>
+
+<category>
+<pattern>不开心</pattern>
+<template>
+<random>
+  <li><get name="username"/>咋了，和我说说吧</li>
+  <li><get name="username"/>别不开心哟。说出来吧，会舒服点。</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>是的</pattern>
+<template>
+<random>
+  <li>理解，嘿嘿</li>
+  <li>了解。你觉得更深层次的原因是什么呢？</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>1加1等于*</pattern>
+<template>
+<random>
+  <li>当然等于2嘛。</li>
+  <li>等于2吧，你不会要我证明吧？呀嘛喋～～</li>
+</random>
+</template>
+</category>
+
+</aiml>

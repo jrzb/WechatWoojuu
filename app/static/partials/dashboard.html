@@ -1,0 +1,19 @@
+<header>
+	<span class="nipple-dashboard"><i class="sprite">Dashboard</i></span>
+</header>
+<section id="summary">
+	<figure id="summary-all">
+		<h2>{{ summary.amount | currency:"\u00A5":0 }}<sub>元</sub></h2>
+		<figcaption>2013年消费</figcaption>
+	</figure>
+	<figure id="category-all">
+		<h2>{{ top.totalamount | currency:"\u00A5":0 }}<sub>元</sub></h2>
+		<figcaption>用于{{ top.category }}</figcaption>
+	</figure>
+</section>
+<section id="charts">
+	<hgroup>
+		<h2>本周支出: <b>{{ weeklyTotal | currency:"":1 }}元</b></h2>
+	</hgroup>
+	<chart id="weekly-chart" value="{{ weeklyChart }}" type="areaspline" height="200"></chart>
+</section>

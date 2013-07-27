@@ -1,34 +1,27 @@
 {
-  "name": "angular-flask-requirejs-seed",
+  "name": "wechat.woojuu.cc",
   "version": "0.1.0",
-  "description": "Seed for collecting gists on building AngularJS+Flask app",
+  "description": "Woojuu for WeChat",
   "main": "index.html",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0",
+	"grunt-contrib-cssmin": "~0.6.0"
+  },
+  "devDependencies": {
+	"grunt": "~0.4.1",
+	"grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-cssmin": "~0.6.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/pomelo422/angular-flask-requirejs-seed.git"
+    "url": "git://github.com/pomelo422/wechat.woojuu.cc.git"
   },
-  "keywords": [
-    "angular",
-    "angularjs",
-    "flask",
-    "requirejs",
-    "seed",
-    "less",
-    "coffeescript"
-  ],
-  "author": "Liki Du",
+  "author": "Liki Du, Denny Zhang",
   "license": "BSD",
-  "gitHead": "920f1fbe6755db48e8ec8beefbaf07b418d1e06e",
   "readmeFilename": "README.md",
-  "dependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-cssmin": "~0.6.0"
-  },
-  "devDependencies": {
-    "grunt-usemin": "~0.1.12"
-  }
+  "gitHead": "d372d5d026d81a78a6bd50458487aa298f36bc57"
 }

@@ -1,0 +1,62 @@
+[
+    {
+        "category": "衣服饰品",
+        "date": "2013-04-30",
+        "totalamount": 12
+    },
+    {
+        "category": "早午晚餐",
+        "date": "2013-04-30",
+        "totalamount": 89
+    },
+    {
+        "category": "衣服饰品",
+        "date": "2013-04-29",
+        "totalamount": 520
+    },
+    {
+        "category": "早午晚餐",
+        "date": "2013-04-29",
+        "totalamount": 352
+    },
+	{
+        "category": "衣服饰品",
+        "date": "2013-04-28",
+        "totalamount": 520
+    },
+    {
+        "category": "早午晚餐",
+        "date": "2013-04-27",
+        "totalamount": 56
+    },
+	{
+        "category": "衣服饰品",
+        "date": "2013-04-26",
+        "totalamount": 120
+    },
+    {
+        "category": "早午晚餐",
+        "date": "2013-04-26",
+        "totalamount": 22
+    },
+	{
+        "category": "衣服饰品",
+        "date": "2013-04-25",
+        "totalamount": 2120
+    },
+    {
+        "category": "早午晚餐",
+        "date": "2013-04-25",
+        "totalamount": 22
+    },
+	{
+        "category": "数码产品",
+        "date": "2013-04-25",
+        "totalamount": 1220
+    },
+    {
+        "category": "早午晚餐",
+        "date": "2013-04-24",
+        "totalamount": 22
+    }
+]

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<meta name="author" content="DennyZhang"/>
+<meta name="language" content="zh"/>
+
+<!-- <category> -->
+<!--   <pattern>*</pattern> -->
+<!--   <template> -->
+<!--     <condition> -->
+<!--       <li><srai>MYINACTIVITYQUESTIONS</srai></li> -->
+<!--     </condition> -->
+<!--   </template> -->
+<!-- </category> -->
+
+<!-- <category> -->
+<!-- <pattern>MYINACTIVITYQUESTIONS</pattern> -->
+<!-- <template> -->
+<!-- <random> -->
+
+<!-- <li>这个...小的还不大认识... 小莴要多学学，变得更聪明些。/::d</li> -->
+<!-- <li>小莴还不太懂耶。有啥建议和困惑，你直接向我发问或发语音就好了。我回答不了，会转达给我主人的/::d</li> -->
+
+<!-- <\!-- <li>此句竟有些不解。/::d 但若是换个格式，譬如“128 宫廷御膳房佳肴”。倒也不负恩泽~</li> -\-> -->
+<!-- <\!-- <li>真心听不懂耶，是我太笨了吗？/::d</li> -\-> -->
+<!-- <\!-- <li>Hi，小的是新来的，现在正专心做好记账功能，成为你的好助手。/::d</li> -\-> -->
+
+<!-- </random> -->
+<!-- </template> -->
+<!-- </category> -->
+
+</aiml>

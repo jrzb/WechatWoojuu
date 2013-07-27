@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<meta name="author" content="DennyZhang"/>
+<meta name="language" content="zh"/>
+
+<category>
+<pattern>ASK USER A FINANCE QUESTION</pattern>
+<template>
+<random>
+
+<li><get name="username"/>你花得最冤枉的钱是哪一次呢？讲来听听吧</li>
+<li><get name="username"/>最近你有发现啥很棒很赞的店或商品吗？告诉我一下呗</li>
+<li><get name="username"/>你今天过得咋样，开心不？</li>
+<li><get name="username"/>你最近还有啥钱花了，却没记的呢？/:?</li>
+<li><get name="username"/>记账，记下生活中的欢乐时光。你觉得，是吗？/:?</li>
+<li><get name="username"/>记账让我们不盲目地节省，也不盲目地投资。你觉得，是吗?</li>
+
+<!-- <li> -->
+<!-- <condition name="gender" value="male">男生 </condition><condition name="gender" value="female">女生 </condition> -->
+<!-- 你花得最冤枉的钱是哪一次呢？讲来听听吧 -->
+<!-- </li> -->
+
+</random>
+</template>
+</category>
+
+</aiml>

@@ -1,0 +1,2 @@
+[{% for obj in objs %}
+{"id":{[obj[0]]}, "category":"{[obj[1]]}", "date":"{[obj[2]]}","amount":"{[format_float_str(obj[3])]}","notes":"{[remove_amount_from_comment(obj[4], obj[3])]}","emoji":"{[get_emoji_html_escape(obj[1])]}"},{% endfor %}]

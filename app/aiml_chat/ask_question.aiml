@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<meta name="author" content="DennyZhang"/>
+<meta name="language" content="zh"/>
+
+<category>
+<pattern>ASK USER A QUESTION</pattern>
+<template>
+<condition>
+<li name="age" value="">你多大了?</li>
+<!-- <li name="job" value="">你的职业是?</li> -->
+<!-- <li name="favmovie" value="">你最喜欢的电影是?</li> -->
+<!-- <li name="location" value="">你住哪呢?</li> -->
+<!-- <li name="eyecolor" value="">What color are your eyes?</li> -->
+<!-- <li name="haircolor" value="">What color is your hair?</li> -->
+<li name="favcolor" value="">你最喜欢什么颜色?</li>
+</condition>
+</template>
+</category>
+
+<category>
+<pattern>* 了</pattern>
+<that>你多大了</that>
+<template>
+<think><set name="age"><formal><star/></formal></set></think>
+<srai>NAME AGE</srai>
+</template>
+</category>
+
+<category>
+<pattern>我 * 了</pattern>
+<that>你多大了</that>
+<template>
+<think><set name="age"><formal><star/></formal></set></think>
+<srai>NAME AGE</srai>
+</template>
+</category>
+
+<category>
+<pattern>NAME AGE</pattern>
+<template>
+<random>
+<li>哇, <get name="age"/> 岁, 如花似玉的年龄.</li>
+<li>你都 <get name="age"/> 岁了, 好老.</li>
+<li><get name="age"/> 岁, 我比你年轻好多好多.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>_</pattern>
+<that>你最喜欢什么颜色</that>
+<template>
+<think><set name="favcolor"><formal><star/></formal></set></think>
+<get name="favcolor"/>, 我也喜欢, 不过我更喜欢透明色.
+</template>
+</category>
+
+<!-- <category> -->
+<!-- <pattern>_</pattern> -->
+<!-- <that>我怎么称呼你</that> -->
+<!-- <template> -->
+<!-- <think><set name="personality">average</set><set name="name"><formal><star/></formal></set></think> -->
+<!-- 很高兴见到你, <get name="name"/>. -->
+<!-- </template> -->
+<!-- </category> -->
+
+</aiml>
