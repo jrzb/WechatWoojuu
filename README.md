@@ -8,17 +8,17 @@
 - Help users to form the habit of recording daily expense
 
 - Enable expense data to provide meaningful feedback
-  ![](misc/comparision.jpg)
-  ![](misc/prediction.jpg)
-  ![](misc/voiceinput.jpg)
+  ![](misc/comparision.jpg)  ![](misc/prediction.jpg)  ![](misc/voiceinput.jpg)
 
 - Get hand wet for AI chat and data analysis
-  ![](misc/highchart.png)
-  ![](misc/R1.png)
-  ![](misc/R2.png)
+
+
+  ![](misc/highchart.png)  ![](misc/R2.png)  ![](misc/R1.png)
 
 ## Installation
+
 - verified on Darwin12.4, ubuntu10.4
+
 | Name                                   | Comment                                                    |
 |:----------------------------------------|------------------------------------------------------------|
 | Checkout github                        | https://github.com/DennyZhang/WechatWoojuu                     |
