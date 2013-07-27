@@ -10,7 +10,7 @@
 - Get hand wet for AI chat and data analysis
 
 ### screenshots
-  ![](misc/comparision.jpg)  ![](misc/prediction.jpg)
+  ![](misc/comparision.jpg)  ![](misc/prediction.jpg) ![](misc/voiceinput.jpg)
   ![](misc/highchart.png)  ![](misc/R2.png)  ![](misc/R1.png)
 
 ## Installation
