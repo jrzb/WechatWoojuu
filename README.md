@@ -21,10 +21,18 @@ For deployment:
 	uwsgi -x /home/wwwroot/wechat.woojuu.cc/uwsgi_config.xml -M -t 30 -A 1 -p 1 -d /var/log/uwsgi.log --vhost
 
 
-## Prerequisite
+## Installation
 ---
 
-1. 要安装python的中文分词包pymmseg
+Flask==0.9
+Jinja2==2.6
+Werkzeug==0.8.3
+elementtree==1.2.7-20070827-preview
+hashlib==20081119
+mmseg==1.3.0
+pymmseg==1.2.0
+wsgiref==0.1.2
+
 
 ## WeChat Related
 ---
