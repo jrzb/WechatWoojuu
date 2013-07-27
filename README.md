@@ -1,11 +1,13 @@
 # Wechat for Woojuu -- 记账的微信应用
 =========
 - Record your expense, record your life
+
   ![](misc/qrcode-banner.png)
 
 ## Why we do this?
 - Help users to form the habit of recording daily expense
 - Enable expense data to provide meaningful feedback
+
   ![](misc/comparision.jpg)
   ![](misc/prediction.jpg)
   ![](misc/voiceinput.jpg)
