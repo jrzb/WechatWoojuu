@@ -7,7 +7,7 @@
 ## Why we do this?
 - Help users to form the habit of recording daily expense
 - Enable expense data to provide meaningful feedback
-- Get hand wet for AI chat and data analysis
+- Get hands wet for ATI chat and data analysis
 
 ### screenshots
   ![](misc/comparision.jpg)  ![](misc/prediction.jpg) ![](misc/voiceinput.jpg)
@@ -21,7 +21,7 @@
 |:----------------------------------------|------------------------------------------------------------|
 | Checkout github                        | https://github.com/DennyZhang/WechatWoojuu                     |
 | Install python modules                 | pip instal flask jinjia hashlib; mmseg; aiml                           |
-| Set env of WECHAT_HOME                 | export WECHAT_HOME="/Users/maccode/wechatwoojuu" |
+| Set WECHAT_HOME env                    | export WECHAT_HOME="/Users/maccode/wechatwoojuu" |
 | Start service as uwsgi                 | uwsgi -x /root/website/uwsgi_config.xml -M -t 30 -A 1 -p 1 -d /var/log/uwsgi.log --vhost |
 
 ## Documents: find . -iname "*.md"
